@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  /*========== Colors ==========*/
+  --first-color-50: #f8f8f8;
+  --first-color-100: #efefef;
+  --first-color-200: #dcdcdc;
+  --first-color-300: #bdbdbd;
+  --first-color-400: #989898;
+  --first-color-500: #7c7c7c;
+  --first-color-600: #656565;
+  --first-color-700: #525252;
+  --first-color-800: #464646;
+  --first-color-900: #3d3d3d;
+  --first-color-950: #292929;
+
+  --secondary-color-50: #eef6ff;
+  --secondary-color-100: #d9eaff;
+  --secondary-color-200: #bcdbff;
+  --secondary-color-300: #8ec6ff;
+  --secondary-color-400: #59a5ff;
+  --secondary-color-500: #3a86ff;
+  --secondary-color-600: #1b60f5;
+  --secondary-color-700: #144be1;
+  --secondary-color-800: #173db6;
+  --secondary-color-900: #19388f;
+  --secondary-color-950: #142357;
+
+  --border-color: #EAEAEA;
+
+  --banner-social-color: #D9D9D9;
+  --icon-social-color: rgba(128, 128, 128, 0.2);
+
+  --banner-header-color: rgba(217, 217, 217, 0.10);
+
+  --circle-primary-color: #D8FF19;
+  --circle-secondary-color: #202020;
+
+  --response-primary-color: #090909;
+  --response-danger-color: #E50914;
+  --response-sucess-color: #1B5E20;
+
+  --background-primary-color: #1E1E1E;
+  --background-secondary-color: #1E1E1E;
+  --background-linear-color: linear-gradient(180deg, #090909 0%, #313131 100%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --extra-large-font: 3.75rem; /* 60px */
+  --xx-large-font: 3.125rem; /* 50px */
+  --x-large-font: 2.75rem; /* 44px */
+  --large-font: 2.5rem; /* 40px */
+  --medium-large-font: 1.375rem; /* 22px */
+  --medium-font: 1.25rem; /* 20px */
+  --normal-font: 1.125rem; /* 18px */
+  --base-font: 1rem; /* 16px */
+  --small-medium-font: 0.875rem; /* 14px */
+  --small-font: 0.75rem; /* 12px */
+  --extra-small-font: 0.625rem; /* 10px */
+
+  /*========== Border Radius ==========*/
+  --extra-boder-radius: 100px;
+  --large-border-radius: 45px;
+  --normal-border-radius: 20px;
+  --small-border-radius: 10px;
+
+  /*========== Font weight ==========*/
+  --medium-font-weight: 500;
+  --normal-font-weight: 600;
+  --large-font-weight: 700;
+  --extra-large-font-weight: 800;
+  --maximum-font-weight: 900;
+
+
+  /*========== Breakpoint screen ==========*/
+  --tablette-screen : 768px;
+  --tablette-screen-xl : 896px;
+  --laptop-screen : 1024px;
+  --laptop-screen-xl : 1232px;
+  --medium-screen : 1440px;
+  --medium-screen-xl : 1680px;
+  --large-screen : 1920px;
+  --extra-large-screen : 2048px;
+  --giga-large-screen : 3840px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  ::-webkit-scrollbar {
+    /*display: none;*/
+  }
+  ::-webkit-scrollbar {
+    /*display: none; !* Safari and Chrome *!*/
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: var(--first-color-50);
+  background: var(--background-primary-color);
+  line-height: 1.6;
+  font-family:
+          Poppins,
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
