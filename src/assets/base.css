@@ -14,38 +14,22 @@
   --first-color-900: #3d3d3d;
   --first-color-950: #292929;
 
-  --secondary-color-50: #eef6ff;
-  --secondary-color-100: #d9eaff;
-  --secondary-color-200: #bcdbff;
-  --secondary-color-300: #8ec6ff;
-  --secondary-color-400: #59a5ff;
-  --secondary-color-500: #3a86ff;
-  --secondary-color-600: #1b60f5;
-  --secondary-color-700: #144be1;
-  --secondary-color-800: #173db6;
-  --secondary-color-900: #19388f;
-  --secondary-color-950: #142357;
+  --color-openwork-button: #6FCF97;
 
-  --border-color: #EAEAEA;
 
-  --banner-social-color: #D9D9D9;
-  --icon-social-color: rgba(128, 128, 128, 0.2);
+  --border-color-button: 1px solid rgba(152, 152, 152, 0.50);
+  --border-shadow-button: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
 
-  --banner-header-color: rgba(217, 217, 217, 0.10);
+  --border-card-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-  --circle-primary-color: #D8FF19;
-  --circle-secondary-color: #202020;
+  --border-openwork-color: rgba(111, 207, 151, 0.50);
 
-  --response-primary-color: #090909;
-  --response-danger-color: #E50914;
-  --response-sucess-color: #1B5E20;
+  --background-scroll: #353535;
+  --border-scroll: #D9D9D9;
 
-  --background-primary-color: #1E1E1E;
-  --background-secondary-color: #1E1E1E;
-  --background-linear-color: linear-gradient(180deg, #090909 0%, #313131 100%);
+
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
   --extra-large-font: 3.75rem; /* 60px */
   --xx-large-font: 3.125rem; /* 50px */
   --x-large-font: 2.75rem; /* 44px */
@@ -59,9 +43,9 @@
   --extra-small-font: 0.625rem; /* 10px */
 
   /*========== Border Radius ==========*/
-  --extra-boder-radius: 100px;
-  --large-border-radius: 45px;
-  --normal-border-radius: 20px;
+  --extra-boder-radius: 150px;
+  --large-border-radius: 26px;
+  --normal-border-radius: 15px;
   --small-border-radius: 10px;
 
   /*========== Font weight ==========*/
@@ -104,10 +88,10 @@ html {
 body {
   min-height: 100vh;
   color: var(--first-color-50);
-  background: var(--background-primary-color);
+  background: black;
   line-height: 1.6;
   font-family:
-          Poppins,
+          Trispace,
           Inter,
           -apple-system,
           BlinkMacSystemFont,
