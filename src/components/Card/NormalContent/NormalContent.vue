@@ -14,14 +14,14 @@
 
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+  import { defineProps } from 'vue';
 
-const props = defineProps({
-  imageUrl: String,
-  altText: String,
-  text: String,
-  buttonText: String
-});
+  const props = defineProps({
+    imageUrl: String,
+    altText: String,
+    text: String,
+    buttonText: String
+  });
 </script>
 
 <style>

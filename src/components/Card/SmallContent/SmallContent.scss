@@ -3,8 +3,11 @@
   height: 74px;
   border-radius: var(--normal-border-radius);
   background: var(--first-color-50);
+  filter: var(--border-card-shadow);
   display: flex;
   align-items: center;
+  //TODO
+  margin: 15px;
 
   .small-card__icon{
     width: 38px;
@@ -25,10 +28,6 @@
   }
 
   .small-card__title {
-
-    .small-card__title-text {
-
-    }
 
     .small-card__title-link {
       text-decoration: none;

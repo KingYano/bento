@@ -90,7 +90,7 @@ html {
 body {
   min-height: 100vh;
   color: var(--first-color-950);
-  background: black;
+  background: var(--first-color-0);
   line-height: 1.6;
   font-family:
           Trispace,
