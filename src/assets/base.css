@@ -50,7 +50,7 @@
   --small-border-radius: 10px;
 
   /*========== Font weight ==========*/
-  --smaill-font-weight: 400;
+  --small-font-weight: 400;
   --medium-font-weight: 500;
   --normal-font-weight: 600;
   --large-font-weight: 700;
@@ -89,7 +89,7 @@ html {
 
 body {
   min-height: 100vh;
-  color: var(--first-color-50);
+  color: var(--first-color-950);
   background: black;
   line-height: 1.6;
   font-family:
@@ -106,7 +106,8 @@ body {
           'Droid Sans',
           'Helvetica Neue',
           sans-serif;
-  font-size: 14px;
+  font-size: var(--base-font);
+  font-weight: var(--small-font-weight);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
