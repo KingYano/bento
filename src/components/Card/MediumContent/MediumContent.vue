@@ -2,7 +2,7 @@
   <div class="medium-card">
     <div class="medium-card__left-side">
       <div class="medium-card__icon">
-        <img class="medium-card__icon-image" :src="imageUrl" :alt="altText">
+        <img class="medium-card__icon-image" :src="imageUrl" :alt="imageAlt">
       </div>
       <div class="medium-card__paragraph">
         <p class="medium-card__paragraph-title">{{ title }}</p>
@@ -13,8 +13,14 @@
       </div>
     </div>
     <div class="medium-card__right-side">
-      <div class="medium-card__images">
-
+      <div v-if="multipleImage" class="medium-card__multiple-images">
+        <img :src="imagesUrlFirst" :alt="imagesAltFirst">
+        <img :src="imagesUrlSecond" :alt="imagesAltSecond">
+        <img :src="imagesUrlThird" :alt="imageAltThird">
+        <img :src="imagesUrlFour" :alt="imagesAltFour">
+      </div>
+      <div v-else class="medium-card__single-images">
+        <img :src="singleImageUrl" :alt="singleImageAlt">
       </div>
     </div>
   </div>
@@ -23,15 +29,24 @@
 
 <script setup lang="ts">
   import { defineProps } from 'vue';
-  import {types} from "sass";
-  import String = types.String;
 
   const props = defineProps({
     imageUrl: String,
-    altText: String,
+    imageAlt: String,
     title: String,
     text: String,
-    buttonText: String
+    buttonText: String,
+    multipleImage: Boolean,
+    imagesUrlFirst: String,
+    imagesAltFirst: String,
+    imagesUrlSecond: String,
+    imagesAltSecond: String,
+    imagesUrlThird: String,
+    imageAltThird: String,
+    imagesUrlFour: String,
+    imagesAltFour: String,
+    singleImageUrl: String,
+    singleImageAlt: String
   });
 </script>
 

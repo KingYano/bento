@@ -50,6 +50,7 @@
   --small-border-radius: 10px;
 
   /*========== Font weight ==========*/
+  --very-small-font-weight: 300;
   --small-font-weight: 400;
   --medium-font-weight: 500;
   --normal-font-weight: 600;

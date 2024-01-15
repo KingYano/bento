@@ -1,7 +1,7 @@
 <template>
   <div class="small-card">
     <div class="small-card__icon">
-      <img class="small-card__icon-image" :src="imageUrl" :alt="altText">
+      <img class="small-card__icon-image" :src="imageUrl" :alt="imageAlt">
     </div>
     <div class="small-card__title">
       <a v-if="isLink" class="small-card__title-link" target="_blank" :href="textHref">{{ text }}</a>
@@ -15,7 +15,7 @@
 
   const props = defineProps({
     imageUrl: String,
-    altText: String,
+    imageAlt: String,
     text: String,
     textHref: String,
     isLink: Boolean,
