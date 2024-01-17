@@ -1,0 +1,30 @@
+.large-card {
+  width: 390px;
+  height: 390px;
+  border-radius: var(--normal-border-radius);
+  background: var(--first-color-50);
+  filter: var(--border-card-shadow);
+  //TODO
+  margin: 15px;
+
+  .large-card__picture {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .large-card__picture-img {
+      border-radius: var(--normal-border-radius);
+      height: 350px;
+      width: 350px;
+    }
+  }
+
+  .large-card__map {
+    height: 100%;
+    width: 100%;
+
+    .large-card__map-img {
+      border-radius: var(--normal-border-radius);
+    }
+  }
+}

@@ -7,11 +7,10 @@
       <p class="normal-card__title-text">{{ text }}</p>
     </div>
     <div class="normal-card__command">
-      <button class="normal-card__command-button">{{ buttonText }}</button>
+    <button class="normal-card__command-button"><a class="normal-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
     </div>
   </div>
 </template>
-
 
 <script setup lang="ts">
   import { defineProps } from 'vue';
@@ -20,7 +19,8 @@
     imageUrl: String,
     imageAlt: String,
     text: String,
-    buttonText: String
+    buttonText: String,
+    buttonLink: String
   });
 </script>
 

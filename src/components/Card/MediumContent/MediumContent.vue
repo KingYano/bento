@@ -9,7 +9,7 @@
         <p class="medium-card__paragraph-text">{{ text }}</p>
       </div>
       <div class="medium-card__command">
-        <button class="medium-card__command-button">{{ buttonText }}</button>
+        <button class="medium-card__command-button"><a class="medium-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
       </div>
     </div>
     <div class="medium-card__right-side">
@@ -36,6 +36,7 @@
     title: String,
     text: String,
     buttonText: String,
+    buttonLink: String,
     multipleImage: Boolean,
     imagesUrlFirst: String,
     imagesAltFirst: String,

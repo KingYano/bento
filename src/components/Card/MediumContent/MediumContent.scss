@@ -58,6 +58,11 @@
         font-size: var(--giga-small-font);
         cursor: pointer;
 
+        .medium-card__command-link {
+          text-decoration: none;
+          color: var(--first-color-950);
+        }
+
         &:hover {
           background: var(--first-color-50);
         }
