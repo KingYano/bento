@@ -1,5 +1,10 @@
 .left-side-content {
+  padding: 0 40px;
+  margin-top: 70px;
+
   .left-side-image {
+    padding-bottom: 30px;
+
     .left-side-image-profile {
       width: 150px;
       height: 150px;
@@ -8,7 +13,28 @@
       object-position: 50% 25%;
     }
   }
-  .left-side-copyright {
 
+  .left-side-paragraph {
+    &-title {
+      font-size: var(--medium-large-font);
+      font-weight: var(--medium-font-weight);
+      padding-bottom: 35px;
+    }
+
+    &-introduction {
+      padding-bottom: 20px;
+    }
+
+    &-details {
+      padding-bottom: 20px;
+    }
+
+    &-services3 {
+      padding-bottom: 30px;
+    }
+  }
+
+  .left-side-copyright {
+    display: none;
   }
 }
