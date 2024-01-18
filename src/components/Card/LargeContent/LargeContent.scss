@@ -12,10 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .large-card__picture-img {
-      border-radius: var(--normal-border-radius);
       height: 350px;
       width: 350px;
+      object-fit: cover;
+      border-radius: var(--normal-border-radius);
     }
   }
 

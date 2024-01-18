@@ -66,19 +66,6 @@
     width: 199px;
     padding-top: 20px;
 
-    .medium-card__multiple-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-
-      img {
-        height: 62px;
-        width: 82px;
-        border-radius: var(--normal-border-radius);
-        object-fit: cover;
-      }
-    }
-
     .medium-card__single-images {
       width: 179px;
       height: 140px;
@@ -100,19 +87,6 @@
   .medium-card__left-side {
     width: 199px;
     padding-top: 20px;
-
-    .medium-card__multiple-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-
-      img {
-        height: 62px;
-        width: 82px;
-        border-radius: var(--normal-border-radius);
-        object-fit: cover;
-      }
-    }
 
     .medium-card__single-images {
       margin-left: 20px;

@@ -18,12 +18,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 
 const props = defineProps({
   imageRightSide: Boolean,
-  imageUrl: String,
-  imageAlt: String,
   title: String,
   text: String,
   buttonText: String,
