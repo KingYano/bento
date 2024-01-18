@@ -1,0 +1,27 @@
+.badge-work {
+  width: 154px;
+  height: 48px;
+  border-radius: var(--large-border-radius);
+  background: var(--first-color-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .badge-work-message {
+    font-weight: var(--normal-font-weight);
+  }
+}
+
+.badge-work-open {
+  border: 1px solid var(--border-openwork-color);
+  .badge-work-message {
+    color: var(--color-openwork-button);
+  }
+}
+
+.badge-work-not-open {
+  border: 1px solid var(--border-notwork-color);
+  .badge-work-message {
+    color: var(--color-notwork-button);
+  }
+}
