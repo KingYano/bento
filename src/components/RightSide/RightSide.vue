@@ -2,7 +2,7 @@
 <section class="right-side-content">
   <div class="right-side-social">
     <h2 class="right-side-social-title">Mes Réseaux <span>(contactez-moi)</span></h2>
-    <div class="right-side-social-position">
+    <div class="right-side-social-cards">
       <NormalContent
           :imageUrl="'./src/assets/logo/logo_lkn.webp'"
           text="Yanis Belkadi"
@@ -49,32 +49,38 @@
     </div>
   </div>
 
+  <div class="right-side-projects">
+    <h2 class="right-side-projects-title">Mes projets</h2>
+    <div class="right-side-projects-cards">
+      <MediumProject
+          :imageRightSide="true"
+          :title="'Ghost Runner'"
+          :text="'Jeu de course où les joueurs contrôlent un fantôme pour esquiver des obstacles avec une vitesse et une difficulté croissantes, présentant des visuels de Bedimcode et des graphiques générés par l\'IA de DALL·E 3.'"
+          :buttonText="'Ouvrir le projet'"
+          :buttonLink="'https://github.com/KingYano/halloween_game'"
+          :singleImageUrl="'./src/assets/images/projects/image_halloween.webp'"
+      ></MediumProject>
 
+      <MediumProject
+          :imageRightSide="false"
+          :title="'Arcane Quizz'"
+          :text="'Créez un quiz sur la série Netflix Arcane avec 8 questions pour tester les connaissances des fans avec une esthétique inspirée d\'Arcane.'"
+          :buttonText="'Ouvrir le projet'"
+          :buttonLink="'https://arcane-quizz.netlify.app/'"
+          :singleImageUrl="'./src/assets/images/projects/image_arcane.webp'"
+      ></MediumProject>
+    </div>
+  </div>
+
+
+  <div class="right-side-map">
+    <h2 class="right-side-map-title">Localisation</h2>
     <LargeContent
-        :isImage="true"
-        :imageUrl="'./src/assets/images/image_test.png'"
+        :isImage="false"
+        :imageUrl="'./src/assets/images/map/image_map.png'"
         :imageAlt="'alt de l\'image'"
     ></LargeContent>
-
-    <MediumProject
-        :imageRightSide="true"
-        :imageUrl="'./src/assets/logo.svg'"
-        :title="'YoungHotBlood'"
-        :text="'Create a quiz about the Netflix series Arcane with 8 questions to test fan knowledge with an Arcane-inspired aesthetic.'"
-        :buttonText="'S\'abonner'"
-        :buttonLink="'https://github.com/KingYano'"
-        :singleImageUrl="'./src/assets/images/image_test.png'"
-    ></MediumProject>
-
-    <MediumProject
-        :imageRightSide="false"
-        :imageUrl="'./src/assets/logo.svg'"
-        :title="'YoungHotBlood'"
-        :text="'Create a quiz about the Netflix series Arcane with 8 questions to test fan knowledge with an Arcane-inspired aesthetic.'"
-        :buttonText="'S\'abonner'"
-        :buttonLink="'https://github.com/KingYano'"
-        :singleImageUrl="'./src/assets/images/image_test.png'"
-    ></MediumProject>
+  </div>
 </section>
 </template>
 
