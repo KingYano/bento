@@ -1,3 +1,20 @@
 .right-side-content {
+  .right-side-social {
+    margin-bottom: 55px;
 
+    &-title {
+      margin-left: 40px;
+      margin-bottom: 25px;
+      font-size: var(--normal-font);
+
+      span {
+        font-size: var(--small-font);
+      }
+    }
+
+    &-position {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -1,32 +1,54 @@
 <template>
 <section class="right-side-content">
-    <NormalContent
-      :imageUrl="'./src/assets/logo.svg'"
-      :text="'Yanis Belkadi'"
-      :buttonText="'Se connecter'"
-      :buttonLink="'https://github.com/KingYano'"
-    ></NormalContent>
+  <div class="right-side-social">
+    <h2 class="right-side-social-title">Mes Réseaux <span>(contactez-moi)</span></h2>
+    <div class="right-side-social-position">
+      <NormalContent
+          :imageUrl="'./src/assets/logo/logo_lkn.webp'"
+          text="Yanis Belkadi"
+          buttonText="Se connecter"
+          buttonLink="https://www.linkedin.com/in/yanis-belkadi-746727209/"
+      ></NormalContent>
 
-    <SmallContent
-      :isLink="true"
-      :imageUrl="'./src/assets/logo.svg'"
-      :text="'belkadi.yanis.l@gmail.com'"
-      :textHref="'mailto:belkadi.yanis.l@gmail.com'"
-    ></SmallContent>
+      <NormalContent
+          :imageUrl="'./src/assets/logo/logo_github.webp'"
+          text="Yanis Belkadi"
+          buttonText="Suivre"
+          buttonLink="https://github.com/KingYano"
+      ></NormalContent>
 
-    <MediumContent
-        :imageUrl="'./src/assets/logo.svg'"
-        :title="'YoungHotBlood'"
-        :text="'@younghotblood'"
-        :buttonText="'S\'abonner'"
-        :buttonLink="'https://github.com/KingYano'"
-        :multipleImage="true"
-        :singleImageUrl="'./src/assets/images/image_test.png'"
-        :imagesUrlFirst="'./src/assets/images/image_test.png'"
-        :imagesUrlSecond="'./src/assets/images/image_test.png'"
-        :imagesUrlThird="'./src/assets/images/image_test.png'"
-        :imagesUrlFour="'./src/assets/images/image_test.png'"
-    ></MediumContent>
+      <MediumContent
+          :imageUrl="'./src/assets/logo/logo_arstation.webp'"
+          :title="'YoungHotBlood'"
+          :text="'@younghotblood'"
+          :buttonText="'S\'abonner'"
+          :buttonLink="'https://www.artstation.com/younghotblood'"
+          :multipleImage="false"
+          singleImageUrl="./src/assets/images/projects/image_arstation.webp"
+      ></MediumContent>
+
+      <MediumContent
+          :imageUrl="'./src/assets/logo/logo_instagram.webp'"
+          :title="'YoungHotBlood'"
+          :text="'@youngh0tblood'"
+          :buttonText="'Suivre'"
+          :buttonLink="'https://www.instagram.com/youngh0tblood/'"
+          :multipleImage="true"
+          :imagesUrlFirst="'./src/assets/images/instagram/image_insta_01.webp'"
+          :imagesUrlSecond="'./src/assets/images/instagram/image_insta_02.webp'"
+          :imagesUrlThird="'./src/assets/images/instagram/image_insta_03.webp'"
+          :imagesUrlFour="'./src/assets/images/instagram/image_insta_04.webp'"
+      ></MediumContent>
+
+      <SmallContent
+          :isLink="true"
+          :imageUrl="'./src/assets/logo/logo_mail.webp'"
+          :text="'belkadi.yanis.l@gmail.com'"
+          :textHref="'mailto:belkadi.yanis.l@gmail.com'"
+      ></SmallContent>
+    </div>
+  </div>
+
 
     <LargeContent
         :isImage="true"

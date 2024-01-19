@@ -1,6 +1,7 @@
 .left-side-content {
   padding: 0 40px;
   margin-top: 70px;
+  margin-bottom: 65px;
 
   .left-side-image {
     padding-bottom: 30px;
@@ -21,15 +22,11 @@
       padding-bottom: 35px;
     }
 
-    &-introduction {
+    &-introduction, &-details, &-services3 {
       padding-bottom: 20px;
     }
 
-    &-details {
-      padding-bottom: 20px;
-    }
-
-    &-services3 {
+    &-end {
       padding-bottom: 30px;
     }
   }
