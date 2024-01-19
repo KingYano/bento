@@ -1,37 +1,31 @@
 .right-side-content {
-  .right-side-social {
-    margin-bottom: 55px;
+  .right-side {
+    &-social, &-projects, &-map {
+      margin-bottom: 55px;
 
-    &-title {
-      margin-left: 40px;
-      margin-bottom: 25px;
-      font-size: var(--normal-font);
+      &-title {
+        margin-left: 40px;
+        margin-bottom: 25px;
+        font-size: var(--normal-font);
+        font-weight: var(--medium-font-weight);
 
-      span {
-        font-size: var(--small-font);
+        span {
+          font-size: var(--small-font);
+        }
+      }
+
+      &-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
 
-    &-cards {
+    &-copyright {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 30px;
     }
   }
 
-  .right-side-projects {
-    margin-bottom: 55px;
-
-    &-title {
-      margin-left: 40px;
-      margin-bottom: 25px;
-      font-size: var(--normal-font);
-    }
-
-    &-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
 }

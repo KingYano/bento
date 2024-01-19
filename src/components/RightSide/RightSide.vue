@@ -1,7 +1,7 @@
 <template>
 <section class="right-side-content">
   <div class="right-side-social">
-    <h2 class="right-side-social-title">Mes Réseaux <span>(contactez-moi)</span></h2>
+    <h2 class="right-side-social-title">Mes Réseaux<span> (contactez-moi)</span></h2>
     <div class="right-side-social-cards">
       <NormalContent
           imageUrl="./src/assets/logo/logo_lkn.webp"
@@ -72,14 +72,21 @@
     </div>
   </div>
 
-
   <div class="right-side-map">
     <h2 class="right-side-map-title">Localisation</h2>
-    <LargeContent
-        :isImage="false"
-        imageUrl="./src/assets/images/map/image_map.png"
-        imageAlt="alt de l\'image"
-    ></LargeContent>
+    <div class="right-side-map-cards">
+      <LargeContent
+          :isImage="false"
+          imageUrl="./src/assets/images/map/image_map.png"
+          imageAlt="alt de l\'image"
+          location="Paris ◦ France"
+      ></LargeContent>
+    </div>
+  </div>
+
+  <div class="right-side-copyright">
+    <p>©Yanis Belkadi - 2024</p>
+    <p>V◦1</p>
   </div>
 </section>
 </template>

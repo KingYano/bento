@@ -5,6 +5,12 @@
     </div>
     <div v-else class="large-card__map">
       <img class="large-card__map-img" :src="imageUrl" :alt="imageAlt">
+      <div class="large-card__map-focus">
+        <img src="@/assets/images/map/image_focus.webp">
+      </div>
+      <div class="large-card__map-location">
+        <p>{{ location }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -15,7 +21,7 @@
     isImage: Boolean,
     imageUrl: String,
     imageAlt: String,
-
+    location: String,
   });
 </script>
 

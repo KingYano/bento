@@ -24,9 +24,38 @@
   .large-card__map {
     height: 100%;
     width: 100%;
+    position: relative;
 
-    .large-card__map-img {
+    &-img {
       border-radius: var(--normal-border-radius);
+    }
+
+    &-focus {
+      position: absolute;
+      top: 48%;
+      left: 35%;
+
+      img {
+        height: 100px;
+      }
+    }
+
+    &-location {
+      margin-bottom: 20px;
+      margin-left: 15px;
+      bottom: 0;
+      font-size: var(--extra-small-font);
+      font-weight: var(--very-small-font-weight);
+      position: absolute;
+      width: fit-content;
+      border-radius: 26px;
+      border: 1px solid var(--border-color-button);
+      background: var(--first-color-50);
+      filter: var(--border-card-shadow);
+
+      p {
+        padding: 8px 12px;
+      }
     }
   }
 }
