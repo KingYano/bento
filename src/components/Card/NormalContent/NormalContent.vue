@@ -7,7 +7,7 @@
       <p class="normal-card__title-text">{{ text }}</p>
     </div>
     <div class="normal-card__command">
-    <button class="normal-card__command-button"><a class="normal-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
+    <button tabindex="-1" class="normal-card__command-button"><a class="normal-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
     </div>
   </div>
 </template>

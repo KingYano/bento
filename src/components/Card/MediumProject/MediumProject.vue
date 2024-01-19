@@ -6,7 +6,7 @@
         <p class="medium-card__paragraph-text">{{ text }}</p>
       </div>
       <div class="medium-card__command">
-        <button class="medium-card__command-button"><a class="medium-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
+        <button tabindex="-1" class="medium-card__command-button"><a class="medium-card__command-link" target="_blank" :href="buttonLink">{{ buttonText }}</a></button>
       </div>
     </div>
     <div :class="{'medium-card__right-side': imageRightSide, 'medium-card__left-side': !imageRightSide}">
