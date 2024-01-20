@@ -9,6 +9,7 @@
 
   .badge-work-message {
     font-weight: var(--normal-font-weight);
+    font-size: var(--small-medium-font);
   }
 }
 
@@ -23,5 +24,13 @@
   border: 1px solid var(--border-notwork-color);
   .badge-work-message {
     color: var(--color-notwork-button);
+  }
+}
+
+@media (min-width: 1379px) {
+  .badge-work {
+    .badge-work-message {
+      font-size: var(--base-font);
+    }
   }
 }

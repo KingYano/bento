@@ -16,8 +16,8 @@
 
       &-cards {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
       }
     }
 
@@ -27,5 +27,27 @@
       margin-bottom: 30px;
     }
   }
+}
 
+@media (min-width: 1379px) {
+  .right-side-content {
+    .right-side {
+      &-social, &-projects, &-map {
+        &-title {
+          font-size: var(--x-medium-large-font);
+
+          span {
+            font-size: var(--base-font);
+          }
+        }
+      }
+    }
+
+    .left-side-paragraph {
+      font-size: var(--normal-font);
+      &-title {
+        font-size: var(--x-large-font);
+      }
+    }
+  }
 }

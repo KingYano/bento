@@ -1,4 +1,5 @@
 .left-side-content {
+  width: 555px;
   padding: 0 40px;
   margin-top: 65px;
   margin-bottom: 65px;
@@ -32,6 +33,31 @@
   }
 
   .left-side-copyright {
+    font-size: var(--small-font);
     display: none;
+  }
+}
+
+@media (min-width: 1379px) {
+  .left-side-content {
+
+    .left-side-image {
+      .left-side-image-profile {
+        width: 189px;
+        height: 189px;
+      }
+    }
+    .left-side-copyright {
+      display: flex;
+      margin-top: 200px;
+      justify-content: space-between;
+    }
+
+    .left-side-paragraph {
+      font-size: var(--normal-font);
+      &-title {
+        font-size: var(--x-large-font);
+      }
+    }
   }
 }

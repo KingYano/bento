@@ -1,7 +1,35 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  //max-width: 1280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .right-side-content {
+    width: 555px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1379px) {
+  #app {
+    display: flex;
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: center;
+
+    .right-side {
+      &-content {
+        margin-top: 65px;
+      }
+
+      &-copyright {
+        display: none;
+      }
+    }
+
+  }
 }
 
