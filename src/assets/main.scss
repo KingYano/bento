@@ -1,19 +1,23 @@
 @import './base.css';
 
 #app {
-  //max-width: 1280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 530px) {
+  .left-side-content {
+    width: 555px;
+  }
 
   .right-side-content {
     width: 555px;
-    padding: 0 40px;
   }
 }
 
-@media (min-width: 1379px) {
+@media (min-width: 1395px) {
   #app {
     display: flex;
     flex-direction: unset;
@@ -22,6 +26,7 @@
 
     .right-side {
       &-content {
+        width: 840px;
         margin-top: 65px;
       }
 
@@ -30,6 +35,9 @@
       }
     }
 
+    .left-side-content {
+      width: 555px;
+    }
   }
 }
 
