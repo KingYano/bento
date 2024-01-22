@@ -5,10 +5,8 @@
   background: var(--first-color-50);
   border-top: 1px solid transparent;
   filter: var(--border-card-shadow);
-  //TODO
-  margin: 15px;
   display: flex;
-
+  margin: 15px;
 }
 
 .medium-project-card-normal {
@@ -18,7 +16,7 @@
     .medium-card__paragraph {
       margin-top: 20px;
       margin-left: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       .medium-card__paragraph-text {
         height: 79px;
@@ -37,13 +35,17 @@
       padding-left: 20px;
 
       .medium-card__command-button {
-        width: 80px;
-        height: 23px;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: var(--large-border-radius);
         border: 1px solid var(--border-color-button);
         background: var(--first-color-0);
         box-shadow: var(--border-shadow-button);
-        font-size: var(--giga-small-font);
+        font-size: var(--small-font);
         cursor: pointer;
 
         .medium-card__command-link {
@@ -109,7 +111,7 @@
     .medium-card__paragraph {
       margin-top: 20px;
       margin-left: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       .medium-card__paragraph-text {
         height: 79px;
@@ -128,13 +130,17 @@
       padding-left: 20px;
 
       .medium-card__command-button {
-        width: 80px;
-        height: 23px;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: var(--large-border-radius);
         border: 1px solid var(--border-color-button);
         background: var(--first-color-0);
         box-shadow: var(--border-shadow-button);
-        font-size: var(--giga-small-font);
+        font-size: var(--small-font);
         cursor: pointer;
 
         .medium-card__command-link {

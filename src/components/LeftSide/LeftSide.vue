@@ -18,12 +18,6 @@
       :isOpen="true"
       status="Open to Work"
     ></BadgeWork>
-
-    <div class="left-side-copyright">
-      <p>©Yanis Belkadi - 2024</p>
-      <p>V◦1</p>
-    </div>
-
   </section>
 </template>
 

@@ -4,7 +4,6 @@
   border-radius: var(--normal-border-radius);
   background: var(--first-color-50);
   filter: var(--border-card-shadow);
-  //TODO
   margin: 15px;
 
   .large-card__picture {
@@ -27,6 +26,8 @@
     position: relative;
 
     &-img {
+      height: 100%;
+      width: 100%;
       border-radius: var(--normal-border-radius);
     }
 

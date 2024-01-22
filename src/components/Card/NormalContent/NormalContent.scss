@@ -5,7 +5,6 @@
   background: var(--first-color-50);
   border-top: 1px solid transparent;
   filter: var(--border-card-shadow);
-  //TODO
   margin: 15px;
 
   .normal-card__icon {
@@ -36,13 +35,17 @@
     margin-left: 20px;
 
     .normal-card__command-button {
-      width: 80px;
-      height: 23px;
+      width: fit-content;
+      height: fit-content;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: var(--large-border-radius);
       border: 1px solid var(--border-color-button);
       background: var(--first-color-0);
       box-shadow: var(--border-shadow-button);
-      font-size: var(--giga-small-font);
+      font-size: var(--small-font);
       cursor: pointer;
 
       .normal-card__command-link {

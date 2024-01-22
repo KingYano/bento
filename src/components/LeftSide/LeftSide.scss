@@ -30,11 +30,6 @@
       padding-bottom: 30px;
     }
   }
-
-  .left-side-copyright {
-    font-size: var(--small-font);
-    display: none;
-  }
 }
 
 @media (min-width: 1395px) {
@@ -45,11 +40,6 @@
         width: 200px;
         height: 200px;
       }
-    }
-    .left-side-copyright {
-      display: flex;
-      margin-top: 200px;
-      justify-content: space-between;
     }
 
     .left-side-paragraph {

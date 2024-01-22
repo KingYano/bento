@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 @media (min-width: 530px) {
@@ -27,11 +28,7 @@
     .right-side {
       &-content {
         width: 840px;
-        margin-top: 65px;
-      }
-
-      &-copyright {
-        display: none;
+        padding-top: 65px;
       }
     }
 

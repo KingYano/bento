@@ -4,45 +4,51 @@
     <h2 class="right-side-social-title">Mes Réseaux<span> (contactez-moi)</span></h2>
     <div class="right-side-social-cards">
       <NormalContent
-          imageUrl="./src/assets/logo/logo_lkn.webp"
+          :imageUrl="imageLogoLkn"
+          imageAlt="Logo Linkedin"
           text="Yanis Belkadi"
           buttonText="Se connecter"
           buttonLink="https://www.linkedin.com/in/yanis-belkadi-746727209/"
       ></NormalContent>
 
       <NormalContent
-          imageUrl="./src/assets/logo/logo_github.webp"
+          :imageUrl="imageLogoGit"
+          imageAlt="Logo Github"
           text="Yanis Belkadi"
           buttonText="Suivre"
           buttonLink="https://github.com/KingYano"
       ></NormalContent>
 
       <MediumContent
-          imageUrl="./src/assets/logo/logo_arstation.webp"
+          :imageUrl="imageLogoArt"
+          imageAlt="Logo Artstation"
           title="YoungHotBlood"
           text="@younghotblood"
-          buttonText="S\'abonner"
+          buttonText="S'abonner"
           buttonLink="https://www.artstation.com/younghotblood"
           :multipleImage="false"
-          singleImageUrl="./src/assets/images/projects/image_arstation.webp"
+          :singleImageUrl="imageSocialArt"
+          singleImageAlt="Image de profile Arstation"
       ></MediumContent>
 
       <MediumContent
-          imageUrl="./src/assets/logo/logo_instagram.webp"
+          :imageUrl="imageLogoInsta"
+          imageAlt="Logo Instagram"
           title="YoungHotBlood"
           text="@youngh0tblood"
           buttonText="Suivre"
           buttonLink="https://www.instagram.com/youngh0tblood/"
           :multipleImage="true"
-          imagesUrlFirst="./src/assets/images/instagram/image_insta_01.webp"
-          imagesUrlSecond="./src/assets/images/instagram/image_insta_02.webp"
-          imagesUrlThird="./src/assets/images/instagram/image_insta_03.webp"
-          imagesUrlFour="./src/assets/images/instagram/image_insta_04.webp"
+          :imagesUrlFirst="imageInstaFirst"
+          :imagesUrlSecond="imageInstaSecond"
+          :imagesUrlThird="imageInstaThree"
+          :imagesUrlFour="imageInstaFour"
       ></MediumContent>
 
       <SmallContent
           :isLink="true"
-          imageUrl="./src/assets/logo/logo_mail.webp"
+          :imageUrl="imageLogoMail"
+          imageAlt="Logo mail"
           text="belkadi.yanis.l@gmail.com"
           textHref="mailto:belkadi.yanis.l@gmail.com"
       ></SmallContent>
@@ -58,7 +64,8 @@
           text="Jeu de course où les joueurs contrôlent un fantôme pour esquiver des obstacles avec une vitesse et une difficulté croissantes, présentant des visuels de Bedimcode et des graphiques générés par l\'IA de DALL·E 3."
           buttonText="Ouvrir le projet"
           buttonLink="https://github.com/KingYano/halloween_game"
-          singleImageUrl="./src/assets/images/projects/image_halloween.webp"
+          :singleImageUrl="imageProjectGhost"
+          singleImageAlt="Image de la page d'accueil du projet Ghost Runner"
       ></MediumProject>
 
       <MediumProject
@@ -66,8 +73,9 @@
           title="Arcane Quizz"
           text="Créez un quiz sur la série Netflix Arcane avec 8 questions pour tester les connaissances des fans avec une esthétique inspirée d\'Arcane."
           buttonText="Ouvrir le projet"
-          buttonLink="https://arcane-quizz.netlify.app/"
-          singleImageUrl="./src/assets/images/projects/image_arcane.webp"
+          buttonLink="https://github.com/KingYano/arcane-quizz"
+          :singleImageUrl="imageProjectArcane"
+          singleImageAlt="Image de la page d'accueil du projet Arcane"
       ></MediumProject>
     </div>
   </div>
@@ -77,8 +85,8 @@
     <div class="right-side-map-cards">
       <LargeContent
           :isImage="false"
-          imageUrl="./src/assets/images/map/image_map.png"
-          imageAlt="alt de l\'image"
+          :imageUrl="imageMap"
+          imageAlt="Image d'un plan de paris"
           location="Paris ◦ France"
       ></LargeContent>
     </div>
@@ -92,16 +100,54 @@
 </template>
 
 <script setup lang="ts">
+  import {ref} from "vue";
   import NormalContent from "@/components/Card/NormalContent/NormalContent.vue";
   import SmallContent from "@/components/Card/SmallContent/SmallContent.vue";
   import MediumContent from "@/components/Card/MediumContent/MediumContent.vue";
   import LargeContent from "@/components/Card/LargeContent/LargeContent.vue";
   import MediumProject from "@/components/Card/MediumProject/MediumProject.vue";
 
+  import imageLogoLknSrc from '@/assets/logo/logo_lkn.webp';
+  import imageLogoGitSrc from '@/assets/logo/logo_github.webp';
+  import imageLogoArtSrc from '@/assets/logo/logo_arstation.webp';
+  import imageLogoInstaSrc from '@/assets/logo/logo_instagram.webp';
+  import imageLogoMailSrc from '@/assets/logo/logo_mail.webp';
+
+  import imageSocialArtSrc from '@/assets/images/projects/image_arstation.webp';
+  import imageInstaFirstSrc from '@/assets/images/instagram/image_insta_01.webp';
+  import imageInstaSecondSrc from '@/assets/images/instagram/image_insta_02.webp';
+  import imageInstaThreeSrc from '@/assets/images/instagram/image_insta_03.webp';
+  import imageInstaFourSrc from '@/assets/images/instagram/image_insta_04.webp';
+
+  import imageProjectArcaneSrc from '@/assets/images/projects/image_arcane.webp';
+  import imageProjectGhostSrc from '@/assets/images/projects/image_halloween.webp';
+
+  import imageMapSrc from '@/assets/images/map/image_map.png';
+
   const props = defineProps({
     isOpen: Boolean,
     status: String,
   });
+
+  const imageLogoLkn = ref(imageLogoLknSrc);
+  const imageLogoGit = ref(imageLogoGitSrc);
+  const imageLogoArt = ref(imageLogoArtSrc);
+  const imageLogoInsta = ref(imageLogoInstaSrc);
+  const imageLogoMail = ref(imageLogoMailSrc);
+
+  const imageSocialArt = ref(imageSocialArtSrc);
+  const imageInstaFirst = ref(imageInstaFirstSrc);
+  const imageInstaSecond = ref(imageInstaSecondSrc);
+  const imageInstaThree = ref(imageInstaThreeSrc);
+  const imageInstaFour = ref(imageInstaFourSrc);
+
+
+  const imageProjectArcane = ref(imageProjectArcaneSrc);
+  const imageProjectGhost = ref(imageProjectGhostSrc);
+  const imageMap = ref(imageMapSrc);
+
+
+
 </script>
 
 <style lang="scss">
