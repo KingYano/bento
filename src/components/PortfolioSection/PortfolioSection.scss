@@ -1,5 +1,5 @@
-.right-side-content {
-  .right-side {
+.portfolio-section-content {
+  .portfolio-section {
     &-social, &-projects, &-map {
       margin-bottom: 55px;
 
@@ -31,9 +31,9 @@
 }
 
 @media (min-width: 1395px) {
-  .right-side-content {
+  .portfolio-section-content {
     background: var(--background--right-side);
-    .right-side {
+    .portfolio-section {
       &-social, &-projects, &-map {
         &-title {
           font-size: var(--x-medium-large-font);
@@ -46,13 +46,6 @@
 
       &-map-cards {
         justify-content: flex-start;
-      }
-    }
-
-    .left-side-paragraph {
-      font-size: var(--normal-font);
-      &-title {
-        font-size: var(--x-large-font);
       }
     }
   }

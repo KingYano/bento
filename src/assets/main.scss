@@ -10,11 +10,11 @@
 }
 
 @media (min-width: 530px) {
-  .left-side-content {
+  .profile-section-content {
     width: 555px;
   }
 
-  .right-side-content {
+  .portfolio-section-content {
     width: 555px;
   }
 }
@@ -26,14 +26,12 @@
     align-items: unset;
     justify-content: center;
 
-    .right-side {
-      &-content {
+    .portfolio-section-content {
         width: 840px;
         padding-top: 65px;
-      }
     }
 
-    .left-side-content {
+    .profile-section-content {
       width: 555px;
     }
   }

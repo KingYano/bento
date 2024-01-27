@@ -1,12 +1,12 @@
-.left-side-content {
+.profile-section-content {
   padding: 0 40px;
   margin-top: 65px;
   margin-bottom: 65px;
 
-  .left-side-image {
+  .profile-section-image {
     padding-bottom: 30px;
 
-    .left-side-image-profile {
+    .profile-section-image-profile {
       width: 150px;
       height: 150px;
       border-radius: 150px;
@@ -15,7 +15,7 @@
     }
   }
 
-  .left-side-paragraph {
+  .profile-section-paragraph {
     &-title {
       font-size: var(--medium-large-font);
       font-weight: var(--medium-font-weight);
@@ -33,16 +33,16 @@
 }
 
 @media (min-width: 1395px) {
-  .left-side-content {
+  .profile-section-content {
 
-    .left-side-image {
-      .left-side-image-profile {
+    .profile-section-image {
+      .profile-section-image-profile {
         width: 200px;
         height: 200px;
       }
     }
 
-    .left-side-paragraph {
+    .profile-section-paragraph {
       font-size: var(--normal-font);
       &-title {
         font-size: var(--x-large-font);

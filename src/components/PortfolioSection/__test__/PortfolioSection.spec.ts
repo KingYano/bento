@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from "@vue/test-utils";
-import RightSide from '@/components/RightSide/RightSide.vue';
+import PortfolioSection from '@/components/PortfolioSection/PortfolioSection.vue';
 
-describe('RightSide.vue', () => {
+describe('ProfileSection.vue', () => {
     it('renders with correct content and components', async () => {
-        const wrapper = mount(RightSide);
+        const wrapper = mount(PortfolioSection);
 
         expect(wrapper.text()).toContain('Mes Réseaux (contactez-moi)');
         expect(wrapper.text()).toContain('Mes projets');

@@ -1,8 +1,8 @@
 <template>
-<section class="right-side-content">
-  <div class="right-side-social">
-    <h2 class="right-side-social-title">Mes Réseaux<span> (contactez-moi)</span></h2>
-    <div class="right-side-social-cards">
+<section class="portfolio-section-content">
+  <div class="portfolio-section-social">
+    <h2 class="portfolio-section-social-title">Mes Réseaux<span> (contactez-moi)</span></h2>
+    <div class="portfolio-section-social-cards">
       <NormalContent
           :imageUrl="imageLogoLkn"
           imageAlt="Logo Linkedin"
@@ -55,9 +55,9 @@
     </div>
   </div>
 
-  <div class="right-side-projects">
-    <h2 class="right-side-projects-title">Mes projets</h2>
-    <div class="right-side-projects-cards">
+  <div class="portfolio-section-projects">
+    <h2 class="portfolio-section-projects-title">Mes projets</h2>
+    <div class="portfolio-section-projects-cards">
       <MediumProject
           :imageRightSide="true"
           title="Ghost Runner"
@@ -80,9 +80,9 @@
     </div>
   </div>
 
-  <div class="right-side-map">
-    <h2 class="right-side-map-title">Localisation</h2>
-    <div class="right-side-map-cards">
+  <div class="portfolio-section-map">
+    <h2 class="portfolio-section-map-title">Localisation</h2>
+    <div class="portfolio-section-map-cards">
       <LargeContent
           :isImage="false"
           :imageUrl="imageMap"
@@ -92,7 +92,7 @@
     </div>
   </div>
 
-  <div class="right-side-copyright">
+  <div class="portfolio-section-copyright">
     <p>©Yanis Belkadi - 2024</p>
     <p>V◦1</p>
   </div>
@@ -151,5 +151,5 @@
 </script>
 
 <style lang="scss">
-  @import 'RightSide.scss';
+  @import 'PortfolioSection';
 </style>

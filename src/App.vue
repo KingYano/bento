@@ -1,11 +1,11 @@
 <template>
-  <LeftSide></LeftSide>
-  <RightSide></RightSide>
+  <ProfileSection></ProfileSection>
+  <PortfolioSection></PortfolioSection>
 </template>
 
 <script setup lang="ts">
-  import LeftSide from "@/components/LeftSide/LeftSide.vue";
-  import RightSide from "@/components/RightSide/RightSide.vue";
+  import ProfileSection from "@/components/ProfileSection/ProfileSection.vue";
+  import PortfolioSection from "@/components/PortfolioSection/PortfolioSection.vue";
 </script>
 
 <style lang="scss">
