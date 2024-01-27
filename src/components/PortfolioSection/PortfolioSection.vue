@@ -38,7 +38,7 @@
           text="@youngh0tblood"
           buttonText="Suivre"
           buttonLink="https://www.instagram.com/youngh0tblood/"
-          :multipleImage="true"
+          multipleImage
           :imagesUrlFirst="imageInstaFirst"
           :imagesUrlSecond="imageInstaSecond"
           :imagesUrlThird="imageInstaThree"
@@ -46,7 +46,7 @@
       ></MediumContent>
 
       <SmallContent
-          :isLink="true"
+          isLink
           :imageUrl="imageLogoMail"
           imageAlt="Logo mail"
           text="belkadi.yanis.l@gmail.com"
@@ -59,7 +59,7 @@
     <h2 class="portfolio-section-projects-title">Mes projets</h2>
     <div class="portfolio-section-projects-cards">
       <MediumProject
-          :imageRightSide="true"
+          imageRightSide
           title="Ghost Runner"
           text="Jeu de course où les joueurs contrôlent un fantôme pour esquiver des obstacles avec une vitesse et une difficulté croissantes, présentant des visuels de Bedimcode et des graphiques générés par l\'IA de DALL·E 3."
           buttonText="Ouvrir le projet"
@@ -94,7 +94,7 @@
 
   <div class="portfolio-section-copyright">
     <p>©Yanis Belkadi - 2024</p>
-    <p>V◦1</p>
+    <p>V◦1.01</p>
   </div>
 </section>
 </template>

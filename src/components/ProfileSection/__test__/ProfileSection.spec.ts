@@ -18,6 +18,5 @@ describe('ProfileSection.vue', () => {
         const badgeWorkComponent = wrapper.findComponent({ name: 'BadgeWork' });
         expect(badgeWorkComponent.exists()).toBeTruthy();
         expect(badgeWorkComponent.props('isOpen')).toBe(true);
-        expect(badgeWorkComponent.props('status')).toBe('Open to Work');
     });
 });

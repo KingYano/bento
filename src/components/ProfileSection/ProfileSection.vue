@@ -15,8 +15,7 @@
     </div>
 
     <BadgeWork
-      :isOpen="true"
-      status="Open to Work"
+      isOpen
     ></BadgeWork>
   </section>
 </template>
