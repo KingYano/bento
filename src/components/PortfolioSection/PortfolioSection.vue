@@ -85,9 +85,6 @@
     <div class="portfolio-section-map-cards">
       <LargeContent
           :isImage="false"
-          :imageUrl="imageMap"
-          imageAlt="Image d'un plan de paris"
-          location="Paris ◦ France"
       ></LargeContent>
     </div>
   </div>
