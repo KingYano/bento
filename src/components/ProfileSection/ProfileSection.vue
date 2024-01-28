@@ -1,7 +1,7 @@
 <template>
   <section class="profile-section-content">
     <div class="profile-section-image">
-      <img class="profile-section-image-profile" src="@/assets/images/image_profile.webp">
+      <img class="profile-section-image-profile" loading="lazy" alt="Photographie portrait en buste et en gros plan de Yanis Belkadi" src="@/assets/images/image_profile.webp">
     </div>
     <div class="profile-section-paragraph">
       <h1 class="profile-section-paragraph-title">Yanis BELKADI</h1>

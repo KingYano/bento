@@ -1,10 +1,12 @@
 <template>
   <div class="large-card">
     <div v-if="isImage" class="large-card__picture">
-      <img class="large-card__picture-img" :src="imageUrl" :alt="imageAlt">
+      <img class="large-card__picture-img" loading="lazy" :src="imageUrl" :alt="imageAlt">
     </div>
     <div v-else class="large-card__map">
       <GoogleMap
+          loading="lazy"
+          api-key="AIzaSyCkQjZ9geIsil4lSGlpedipiKYEYl7NaEE"
           class="large-card__map--customs"
           :center="{ lat: 48.8566, lng: 2.3522 }"
           :zoom="12.6"
@@ -16,7 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
 const props = defineProps({

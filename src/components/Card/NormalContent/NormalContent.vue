@@ -1,7 +1,7 @@
 <template>
   <div class="normal-card">
     <div class="normal-card__icon">
-      <img class="normal-card__icon-image" :src="imageUrl" :alt="imageAlt">
+      <img class="normal-card__icon-image" loading="lazy" :src="imageUrl" :alt="imageAlt">
     </div>
     <div class="normal-card__title">
       <p class="normal-card__title-text">{{ text }}</p>

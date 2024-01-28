@@ -40,9 +40,13 @@
           buttonLink="https://www.instagram.com/youngh0tblood/"
           multipleImage
           :imagesUrlFirst="imageInstaFirst"
+          imagesAltFirst="Image graphique instagram"
           :imagesUrlSecond="imageInstaSecond"
+          imagesAltSecond="Image graphique instagram"
           :imagesUrlThird="imageInstaThree"
+          imagesAltThird="Image graphique instagram"
           :imagesUrlFour="imageInstaFour"
+          imagesAltFour="Image graphique instagram"
       ></MediumContent>
 
       <SmallContent

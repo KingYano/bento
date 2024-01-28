@@ -11,7 +11,7 @@
     </div>
     <div :class="{'medium-card__right-side': imageRightSide, 'medium-card__left-side': !imageRightSide}">
       <div class="medium-card__single-images">
-        <img :src="singleImageUrl" :alt="singleImageAlt">
+        <img :src="singleImageUrl" loading="lazy" :alt="singleImageAlt">
       </div>
     </div>
   </div>

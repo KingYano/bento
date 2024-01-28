@@ -2,7 +2,7 @@
   <div class="medium-card">
     <div class="medium-card__left-side">
       <div class="medium-card__icon">
-        <img class="medium-card__icon-image" :src="imageUrl" :alt="imageAlt">
+        <img class="medium-card__icon-image" loading="lazy" :src="imageUrl" :alt="imageAlt">
       </div>
       <div class="medium-card__paragraph">
         <p class="medium-card__paragraph-title">{{ title }}</p>
@@ -14,13 +14,13 @@
     </div>
     <div class="medium-card__right-side">
       <div v-if="multipleImage" class="medium-card__multiple-images">
-        <img :src="imagesUrlFirst" :alt="imagesAltFirst">
-        <img :src="imagesUrlSecond" :alt="imagesAltSecond">
-        <img :src="imagesUrlThird" :alt="imageAltThird">
-        <img :src="imagesUrlFour" :alt="imagesAltFour">
+        <img :src="imagesUrlFirst" loading="lazy" :alt="imagesAltFirst">
+        <img :src="imagesUrlSecond" loading="lazy" :alt="imagesAltSecond">
+        <img :src="imagesUrlThird" loading="lazy" :alt="imagesAltThird">
+        <img :src="imagesUrlFour" loading="lazy" :alt="imagesAltFour">
       </div>
       <div v-else class="medium-card__single-images">
-        <img :src="singleImageUrl" :alt="singleImageAlt">
+        <img :src="singleImageUrl" loading="lazy" :alt="singleImageAlt">
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
     imagesUrlSecond: String,
     imagesAltSecond: String,
     imagesUrlThird: String,
-    imageAltThird: String,
+    imagesAltThird: String,
     imagesUrlFour: String,
     imagesAltFour: String,
     singleImageUrl: String,
