@@ -6,7 +6,7 @@
     <div v-else class="large-card__map">
       <GoogleMap
           loading="lazy"
-          api-key="AIzaSyCkQjZ9geIsil4lSGlpedipiKYEYl7NaEE"
+          api-key=""
           class="large-card__map--customs"
           :center="{ lat: 48.8566, lng: 2.3522 }"
           :zoom="12.6"
