@@ -8,7 +8,7 @@
           imageAlt="Logo Linkedin"
           text="Yanis Belkadi"
           buttonText="Se connecter"
-          buttonLink="https://www.linkedin.com/in/yanis-belkadi-746727209/"
+          buttonLink="https://www.linkedin.com/in/yanisbelkadi/"
       ></NormalContent>
 
       <NormalContent
