@@ -67,7 +67,7 @@
           title="Ghost Runner"
           text="Jeu de course où les joueurs contrôlent un fantôme pour esquiver des obstacles avec une vitesse et une difficulté croissantes, présentant des visuels de Bedimcode et des graphiques générés par l\'IA de DALL·E 3."
           buttonText="Ouvrir le projet"
-          buttonLink="https://github.com/KingYano/halloween_game"
+          buttonLink="https://halloween-game-kingyano.netlify.app/"
           :singleImageUrl="imageProjectGhost"
           singleImageAlt="Image de la page d'accueil du projet Ghost Runner"
       ></MediumProject>
@@ -75,10 +75,20 @@
       <MediumProject
           :imageRightSide="false"
           title="Arcane Quizz"
-          text="Créez un quiz sur la série Netflix Arcane avec 8 questions pour tester les connaissances des fans avec une esthétique inspirée d\'Arcane."
+          text="Quiz sur la série Netflix Arcane avec 8 questions pour tester les connaissances des fans avec une esthétique inspirée d'Arcane."
           buttonText="Ouvrir le projet"
-          buttonLink="https://github.com/KingYano/arcane-quizz"
+          buttonLink="https://arcane-quizz.netlify.app/"
           :singleImageUrl="imageProjectArcane"
+          singleImageAlt="Image de la page d'accueil du projet Arcane"
+      ></MediumProject>
+
+      <MediumProject
+          :imageRightSide="false"
+          title="Historia"
+          text="Historia est un site web qui propose une expérience interactive et immersive pour découvrir l'histoire de l'art à travers les âges."
+          buttonText="Ouvrir le projet"
+          buttonLink="https://historiart.netlify.app/ "
+          :singleImageUrl="imageHistoria"
           singleImageAlt="Image de la page d'accueil du projet Arcane"
       ></MediumProject>
     </div>
@@ -95,7 +105,7 @@
 
   <div class="portfolio-section-copyright">
     <p>©Yanis Belkadi - 2024</p>
-    <p>V◦1.01</p>
+    <p>V◦1.02</p>
   </div>
 </section>
 </template>
@@ -122,6 +132,7 @@
 
   import imageProjectArcaneSrc from '@/assets/images/projects/image_arcane.webp';
   import imageProjectGhostSrc from '@/assets/images/projects/image_halloween.webp';
+  import imageHistoriaSrc from '@/assets/images/projects/image_historia.webp';
 
   import imageMapSrc from '@/assets/images/map/image_map.png';
 
@@ -145,9 +156,7 @@
 
   const imageProjectArcane = ref(imageProjectArcaneSrc);
   const imageProjectGhost = ref(imageProjectGhostSrc);
-  const imageMap = ref(imageMapSrc);
-
-
+  const imageHistoria = ref(imageHistoriaSrc);
 
 </script>
 

@@ -1,14 +1,16 @@
 .badge-work {
+  cursor: pointer;
+  text-decoration: none;
   width: 154px;
   height: 48px;
   border-radius: var(--large-border-radius);
-  background: var(--first-color-50);
+  background: var(--first-color-0);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .badge-work-message {
-    font-weight: var(--normal-font-weight);
+    font-weight: var(--maximum-font-weight);
     font-size: var(--small-medium-font);
   }
 }

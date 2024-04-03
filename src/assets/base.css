@@ -15,8 +15,8 @@
   --first-color-900: #3d3d3d;
   --first-color-950: #292929;
 
-  --color-openwork-button: #60BC87;
-  --color-notwork-button: #D94D4D;
+  --color-openwork-button: #3C8624;
+  --color-notwork-button: #EA1C04;
 
   --background--right-side: #dcdcdc;
   --background-icon-card: #2B2C34;
@@ -26,8 +26,8 @@
 
   --border-card-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-  --border-openwork-color: rgba(96, 188, 135, 0.5);
-  --border-notwork-color: rgba(217, 77, 77, 0.5);
+  --border-openwork-color: #5dc970;
+  --border-notwork-color: #ffc1bd;
 
   --background-scroll: #353535;
   --border-scroll: #D9D9D9;
