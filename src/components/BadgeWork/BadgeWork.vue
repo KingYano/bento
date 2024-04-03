@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="badge-work" :class="isOpen ? 'badge-work-open' : 'badge-work-not-open'">
+  <a href="https://www.linkedin.com/in/yanisbelkadi/" class="badge-work" :class="isOpen ? 'badge-work-open' : 'badge-work-not-open'">
     <p class="badge-work-message">{{ isOpen ? 'Open to work' : 'Already in work' }}</p>
   </a>
 </template>
